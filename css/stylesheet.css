@@ -4,10 +4,66 @@ html {
 
 }
 
+/*
+@media screen and (min-width: 200px) {
+	body {
+		  font-size: 7px;
+	}
+}*/
+p{
+	font-size:1.2em;	
+}
+
+h1{
+	font-family:Verdana, Geneva, sans-serif;
+	color:#FFF;
+	text-shadow:2px 2px #000;
+	margin-left:10%;
+	margin-right:10%;
+	font-size:3em;
+	
+	
+	
+}
+h2{
+	font-family:Verdana, Geneva, sans-serif;
+	color:#FFF;
+	text-shadow:2px 2px #000;
+	font-size:2em;
+	
+	
+	
+}
+
+nav {
+	font-family:Verdana, Geneva, sans-serif;
+	text-shadow:2px 2px #000;
+	overflow:visible;	
+	margin-left: 10%;
+	margin-right:10%;
+	margin-bottom:1.5em;
+	min-width:398px;
+
+}
+nav > div{
+		font-size: 1em;
+		
+		border:thin;
+		border-style:solid;
+		background-color:#09F;
+		border-radius:0.5em;
+		padding:0.5em;
+		margin-top: 0.5em;
+		display:inline;
+	
+	}
+
+
+
 body{
 	padding:0px;
 	margin:0px;
-	background: url('/images/familyphoto.jpg') no-repeat center center fixed; 
+	background: url('familyphoto.jpg') no-repeat center center fixed; 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -15,32 +71,13 @@ body{
 	
 	position:relative;
 	font-family:Verdana, Geneva, sans-serif;
-	font-size:100%;
-}
-
-p{
-	font-size:0.9em;	
-}
-h1{
-	font-family:Verdana, Geneva, sans-serif;
-	color:#FFF;
-	text-shadow:2px 2px #000;
-	margin-left:50px;
-	margin-right:50px;
-	
-	
 	
 }
 
-h2{
-	font-family:Verdana, Geneva, sans-serif;
-	color:#FFF;
-	text-shadow:2px 2px #000;
 
-	
-	
-	
-}
+
+
+
 
 
 
@@ -48,22 +85,10 @@ header {
 	display:block;	
 	background-color:#333;
 	width:100%;
-	height:40px;
+	height:1.5em;
 	margin:0px;
 }
 
-nav {
-	font-family:Verdana, Geneva, sans-serif;
-	margin:50px;
-	margin-top:20px;
-	text-shadow:2px 2px #000;	
-}
-
-span{
-	margin-left:10px;
-	
-	
-}
 
 footer{
 	font-family:Verdana, Geneva, sans-serif;
@@ -85,40 +110,119 @@ a{
 	text-decoration:none;
 	
 }
-
+img{
+	width:20em;	
+}
 #content{
-	padding:20px;
-	padding-left:40px;
+	
+	padding:0.1em;
+	padding-left:1.5em;
 
 }
 
 #content_border{
 	background: rgba(255,255,255,0.6);
-	margin-left: 50px;
-	margin-right: 50px;
+	margin-left: 10%;
+	margin-right: 10%;
 	padding-bottom:20px;
-	border-radius: 30px;
-	min-height:400px;
-	min-width:500px;
+	border-radius: 2em;
+	min-height:20em;
+	
 	
 	
 	
 }
 
-#harley{
+
+#left{
 	background: rgba(100,100,100,0.9);
-	padding:20px;
-	padding-top:10px;	
-	border-radius: 30px;
-	margin:10px;
-	max-width:400px;
+	padding:0.3%;
+	padding-top:0.1%;	
+	border-radius: 2em;
+	margin:0.1%;
+	width: 20em;
+	
 }
 
-#miles{
+#right{
 	background: rgba(100,100,100,0.9);
-	padding:20px;
-	padding-top:10px;	
-	border-radius: 30px;
-	margin:10px;
-	max-width:400px;
+	padding:0.3%;
+	padding-top:0.1%;	
+	border-radius: 2em;
+	margin:0.1%;	
+	width: 20em;
+	
+}
+#outer{
+
+ overflow:hidden;
+
+	
+}
+#inner{
+
+ width:9999px;
+}
+
+
+@media screen and (device-aspect-ratio: 2/3){
+	body {
+		  font-size: 20px;
+	}
+	
+	p{
+	font-size:2em;	
+	}
+	h1{
+		font-size:3.5em;
+	}
+	h2{
+		font-size:3em;
+	}
+	
+	nav > div{
+		font-size: 2.7em;		
+		border:thick;
+		border-style:solid;
+		background-color:#09F;
+		border-radius:0.5em;
+		padding:0.5em;
+		display:block;
+	}
+	#content{
+		padding:0.1em;
+		padding-left:2em;
+		padding-right:2em;
+		margin-bottom:3em;
+	}
+
+}
+
+
+@media screen and (max-width: 650px) {
+	body {
+		  font-size: 12px;
+	}
+}
+@media screen and (max-width: 490px) {
+	body {
+		  font-size: 10px;
+	}
+}
+@media screen and (max-width: 430px) {
+	body {
+		  font-size: 9px;
+	}
+}
+
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px)  { 
+	
+nav > div{
+		font-size: 2.0em;		
+
+	}
+
 }
